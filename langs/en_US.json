@@ -1,0 +1,383 @@
+{
+  "name": "American english",
+  "nopermission": "Sorry, but you are not allowed to use this!",
+  "notfound": "Oops! Seems like we lost the message to send you. This error got reported and we'll find a solution soon.",
+  "command_not_found": " §l§c» §r§cUnknown Command %0!",
+  "commands": {
+    "coins": "Gives information about your current balance",
+    "group": "Manages the groups and users",
+    "removecoins": "Remove coins from a user's balance",
+    "resetcoins": "Reset a user's balance",
+    "chatlog": "Gives information about chatlog",
+    "joinme": "Create or Enter a JoinME",
+    "nick": "Nick yourself to prevent being recognized",
+    "unnick": "Reset Nickname to your real name",
+    "coindrop": "Drop coins next to you",
+    "clan": "Manages your clan and it's settings",
+    "kick": "Kick players from the server",
+    "addcoins": "Add coins to a user's balance",
+    "language": "Change your personal language",
+    "gamemode": "Change the gamemode of players",
+    "settings": "Change your personal game settings to customize behaviour",
+    "status": "View network, memory and cpu workload",
+    "stop": "Stops the current Server",
+    "verify": "Verify your MCBE Account to Discord",
+    "help": "Views help & support for this server",
+    "mixer": "Views help & support for this server"
+  },
+  "colors": {
+    "white": "white",
+    "magenta": "magenta",
+    "red": "red",
+    "light_red": "light red",
+    "gold": "gold",
+    "yellow": "yellow",
+    "green": "green",
+    "aqua": "aqua",
+    "light_blue": "light blue",
+    "blue": "blue",
+    "gray": "gray",
+    "black": "black"
+  },
+  "error": "Something went wrong Sorry!",
+  "LanguageAPI": {
+    "form": {
+      "title": "Available languages",
+      "content": "Select a target language",
+      "button": "Click to change"
+    },
+    "changed": {
+      "success": "You successfully changed your language to §6%0§7.",
+      "failure": "Oops! Something in our system went wrong and we weren't able to change your language!"
+    }
+  },
+  "autofarmer": {
+    "menu": {
+      "title": "autofarmer inventory",
+      "noinput": "You shouldn't put items in the autofarmer. You would lose them so we protected them"
+    },
+    "forms": {
+      "base": {
+        "title": "autofarmer details",
+        "content": "Level: §6%0 §f\nOreType: §6%1",
+        "upgrade": "Upgrade",
+        "delete": "Delete"
+      }
+    }
+  },
+  "server_settings": {
+    "title": "MyServer.net",
+    "description": "Sample description. Additional text will follow soon..."
+  },
+  "MuteSystem": {
+    "muted": {
+      "join": "Remember that you are still muted until §6%0"
+    },
+    "commands": {
+      "mute": {
+        "usage": "Syntax: /mute <playername> <reason>",
+        "no_reason": "Entered reason §6%0 §7is invalid...Try §6/muteids",
+        "success": "You successfully muted §6%0 §7for §6%1 §7until §6%2",
+        "success_target": "You got muted by §6%0 §7for §6%1 §7until §6%2"
+      },
+      "unmute": {
+        "usage": "Syntax: /unmute <playername>",
+        "not_muted": "The given player is not muted!",
+        "success": "You successfully unmuted §6%0§7.",
+        "success_target": "You got unmuted by §6%0§7."
+      }
+    }
+  },
+  "PingSystem": {
+    "command": {
+      "ping": "Your current ping is at §6%0ms§7!"
+    }
+  },
+  "GroupSystem": {
+    "base_command": {
+      "invalid_usage": "Invalid usage! See §6/group help §7for more details."
+    },
+    "commands": {
+      "create": {
+        "description": "Creates a new group",
+        "usage": "Syntax: §f/group create <groupName> <color>",
+        "invalid_color": "Color §6%0 §7does not exist! Please retry again",
+        "already_exists": "The group §6%0 §7already exists!",
+        "success": "You successfully created the group §6%0§7!"
+      },
+      "delete": {
+        "description": "Removes an existing group",
+        "usage": "Syntax: §f/group delete <groupName>",
+        "invalid_group": "The given group does not exist! Please retry or take a look at §6/group list",
+        "success": "You successfully deleted the group §6%0"
+      },
+      "set": {
+        "description": "Changes groups of a player",
+        "usage": "Syntax: §f/group set <playerName> <groupName>",
+        "invalid_group": "The given group does not exist! Please retry or take a look at §6/group list",
+        "no_permission": "You are not allowed to change the group of players with a higher priority than you!",
+        "success": "You successfully changed the group of §6%0 §7to §6%1"
+      },
+      "reset": {
+        "description": "Resets the group of a player to default",
+        "usage": "Syntax: §f/group reset <playerName>",
+        "invalid_player": "The group of player §6%0 §7wasn't changed so it couldn't be reset to default.",
+        "success": "You successfully reset the group of player §6%0§7!"
+      },
+      "list": {
+        "description": "Lists all groups",
+        "content": "List of all groups: §6%0"
+      },
+      "permissions": {
+        "description": "Manages permissions of a group",
+        "usage": "Syntax: §f/group permissions <group> <add|remove|list> [permission]",
+        "invalid_group": "The entered group does not exist!",
+        "invalid_args": "You must either type §6add §7or §6remove§7!",
+        "add": {
+          "already_assigned": "The permission §6%0 §7was already assigned to §6%1",
+          "success": "You successfully assigned permission §6%0 §7to group §6%1"
+        },
+        "list": "Permission list of group §6%0§7: §6%1",
+        "remove": {
+          "not_assigned": "The group §6%1 §7does not have any permission called §6%0",
+          "success": "You successfully removed the permission §6%0 §7from group §6%1"
+        }
+      },
+      "help": {
+        "description": "Shows the help page"
+      }
+    },
+    "kick": {
+      "changedGroup": "You were kicked from the server due to a group change! Please reconnect to enjoy all features"
+    }
+  },
+  "NickSystem": {
+    "nick": {
+      "already_nicked": "You are already nicked as §6%0 §7so you can't change it again! Do §6/unnick §7to get your real name back",
+      "success": "You successfully got nicked as §6%0§7! Don't worry about having none of your old features, you can get it back later by doing §6/unnick§7."
+    },
+    "unnick": {
+      "not_nicked": "You are not nicked so you couldn't be unnicked!",
+      "success": "You successfully got unnicked."
+    }
+  },
+
+  "LobbySystem": {
+    "forms": {
+      "compass": {
+        "title": "Server selector"
+      }
+    },
+    "gadgets": {
+      "title": "Gadgets",
+      "boots": "Boots",
+      "particles": "Particles"
+    },
+    "items": {
+      "compass": "Compass",
+      "profile": "Profile",
+      "gadgets": "Gadgets"
+    }
+  },
+  "ClanSystem": {
+    "leader": "leader",
+    "member": "member",
+    "no_clan": "You have to be in a clan for this action!",
+    "not_owner": "You have to be the leader of your clan to do this action!",
+    "reached_max": "This clan already reached a maximum of §6%0 §7members and invites!",
+    "forms": {
+      "back": " < Back",
+      "base": {
+        "title": "Clan Help",
+        "invites": "View invites [§6%0§7]",
+        "create": "Create a new Clan"
+      },
+      "manage": {
+        "title": "Clan Manager",
+        "view_members": "View members §7[§6%0 §7/ §6%1§7]",
+        "manage_members": "Manage members §7[§6%0 §7/ §6%1§7]",
+        "invite": "Invite players",
+        "ranks": "View ranks §7[§6%0§7]",
+        "delete": "Delete"
+      },
+      "create": {
+        "title": "Create a new Clan",
+        "name": "Select a unique name",
+        "name_placeholder": "Name...",
+        "tag": "Select a unique Tag (4 letters long)",
+        "tag_placeholder": "Tag...",
+        "add_rank_structure": "Create a base rank structure? (Leader and Member will be created anyways)",
+        "no_name_or_tag": "You have to pass a name and tag for your clan!"
+      },
+      "invite": {
+        "title": "Invite a player",
+        "name": "Type the playername you want to invite",
+        "placeholder": "Enter a username...",
+        "no_player": "The given player §6%0 §7was never registered in our databases!",
+        "already_invited": "The player §6%0 §7is already invited to this Clan!",
+        "already_clan": "The player §6%0 §7is already in a Clan, so he can't be invited to your",
+        "success": "You successfully invited §6%0 §7to your Clan!"
+      },
+      "confirmation": {
+        "title": "Confirmation",
+        "message": "Do you accept the invitation for clan §c%0§r?",
+        "accept": "Accept",
+        "deny": "Deny"
+      },
+      "members": {
+        "title": "Member list"
+      },
+      "detailed": {
+        "content": "Please choose an action to do with the player",
+        "kick": "Kick from clan",
+        "promote": "Promote to leader",
+        "confirm_promote": {
+          "title": "§6Promote %0",
+          "content": "Do you really want to promote §e%0 §fto the leader of your clan? You will no longer have any permissions!",
+          "button1": "Yes, do it",
+          "button2": "No, I don't want that"
+        },
+        "leader1": "You successfully promoted §6%0 §7to the leader of your clan!",
+        "leader2": "You were promoted to the leader of your clan by §6%0§7!",
+        "leader3": "§6%0 §7promoted §6%1 §7to the leader of your clan!"
+      },
+      "ranks": {
+        "create":{
+          "title": "Create a new rank",
+          "name_name": "Select a name (Special chars will be removed)",
+          "name_placeholder": "Name...",
+          "color": "Select a color",
+          "priority": "Select a rank to place the new rank below",
+          "permission": "Choose permissions available for the new rank",
+          "permissions": {
+            "kick": "Kick players",
+            "invite": "Invite new players",
+            "rank_create": "Create new ranks",
+            "rank_delete": "Delete existing ranks",
+            "rank_change": "Change member ranks",
+            "clear_account": "Clear clan account",
+            "administrator": "Administrator (All permissions)"
+          }
+        },
+        "delete": {
+          "title": "Delete a rank",
+          "dropdown_name": "Choose a rank to delete",
+          "confirm": {
+            "title": "Rank delete",
+            "content": "Do you confirm deleting the rank §6%0§f?",
+            "button1": "Yes, delete it",
+            "button2": "No, please not"
+          }
+        },
+        "list": {
+          "title": "Rank list",
+          "add": "Add a rank",
+          "delete": "Delete a rank",
+          "no_perm": "Sorry, you don't have the permission to access this site!"
+        }
+      },
+      "delete": {
+        "title": "Delete your Clan",
+        "content":"Do you really want to delete your Clan? This action cannot be undone",
+        "button1": "Yes, delete my Clan",
+        "button2": "No, don't do that",
+        "success": "You successfully deleted your clan §6%0§7!"
+      }
+    }
+  },
+  "VerifySystem": {
+    "already_verified_mc": "You've already verified your account to Discord!",
+    "success": "You successfully created a verify token: §6%0 §7\nFollow the instructions on our discord to verify now!",
+    "token_remember": "You already created a verify token: §6%0"
+  },
+  "CoinSystem": {
+    "drop_tip": "§6%0 §7Coins",
+    "not_found": "The given player wasn't found!",
+    "under_zero": "Please choose a number that is greater than §60§7!",
+    "commands": {
+      "add": {
+        "usage": "Benutzung: §f/addcoins <player: target> <int: coins>",
+        "success1": "You successfully added §6%1 §7coins to §6%0§7's balance!",
+        "success2":"You've gotten §6%1 §7coins by §6%0§7!"
+      },
+      "remove": {
+        "usage": "Usage: §f/removecoins <player: target> <int: coins>",
+        "success1": "You successfully removed §6%1 §7coins from §6%0§7's balance!",
+        "success2":"§6%1 §7coins were removed from your balance by §6%0§7!"
+      },
+      "reset": {
+        "usage": "Usage: §f/reset <player: target>",
+        "success1": "You successfully reset the balance of §6%0",
+        "success2":"Your balance was reset by §6%0"
+      },
+      "coindrop": {
+        "less_coins": "You're missing §6%0 §7coins to start a coindrop!"
+      },
+      "coins": {
+        "success": "The balance of §6%0 §7is currently at §6%1 §7coins.",
+        "not_visible": "The given player doesn't want you to see his coins!"
+      }
+    }
+  },
+  "CustomEntities": {
+    "commands": {
+      "usage": "Usage: §f/customentites <create|delete>",
+      "create": {
+        "usage": "Usage: §f/customentities create <type> [nametag] [size]",
+        "invalid_type": "Sorry, no skin type is called §6%0§7!",
+        "success": "You successfully created an entity of type §6%0§7!"
+      },
+      "delete": {
+        "message": "Hit a custom entity you would like to delete while sneaking",
+        "success": "You successfully deleted the entity with id §6%0"
+      }
+    }
+  },
+  "JoinME": {
+    "form": {
+      "title": "§eJoinME",
+      "create": "Create a JoinME",
+      "join": "Enter a JoinME"
+    },
+    "message": "§8[§5JoinME§8] §6%0 §7is playing on §6%1§7! Enter §6/joinme §7to join his server!"
+  },
+  "Cosmetics": {
+    "capes": {
+      "selected": "§2Your equiped cape",
+      "select": "§8Click to equip",
+      "success": {
+        "reset": "You successfully reset your cape!",
+        "changed": "You successfully set your cape to §6%0§7!"
+      },
+      "form": {
+        "title": "Cosmetics",
+        "reset": "Remove your Cape"
+      }
+    }
+  },
+  "Essentials": {
+    "commands": {
+      "gamemode": {
+        "names": {
+          "creative": "Creative",
+          "adventurer": "Adventurer",
+          "survival": "Survival",
+          "spectator": "Spectator"
+        },
+        "usage": "§7Usage: §f/gamemode <mode> [player: target]",
+        "invalid": "You entered an invalid gamemode! Try again with another mode",
+        "only_ingame": "You can only change your own gamemode ingame! Try running §6/gamemode <mode> <player> §7to change the gamemode of a player",
+        "success_self": "You succesfully changed your Gamemode to §6%0",
+        "success_changed_other": "You successfully changed the Gamemode of §6%0 §7to §6%1",
+        "success_by_other": "Your gamemode was set to§6%1 §7by §6%0"
+      },
+      "kick": {
+        "usage": "§7Usage: §f/kick <player: target> [reason: string]",
+        "offline": "Entered player §6%0 §7is offline or does not exit so he can't be kicked!",
+        "self": "You cannot kick yourself!",
+        "success": "You successfully kicked §6%0§7 from the server!",
+        "kick_screen_message": "You were kicked from the Game by §6%0§7!\n    §7Reason: §6%1§7"
+      }
+    }
+  }
+}
